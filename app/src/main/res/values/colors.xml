@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#d81b60</color>
+
+    <color name="cobra_color_1">#2C0114</color>
+    <color name="cobra_color_2">#797979</color>
+    <color name="cobra_color_3">#4D4C4B</color>
+    <color name="cobra_color_4">#575705</color>
+
+</resources>

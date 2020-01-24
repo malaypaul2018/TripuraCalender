@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/banner1container" >
+            <!--<com.google.android.gms.ads.AdView-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_gravity="center"-->
+                <!--xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/banner1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--ads:adSize="BANNER"-->
+                <!--ads:adUnitId="ca-app-pub-8238907620086193/2739006619">-->
+            <!--</com.google.android.gms.ads.AdView>-->
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:fillViewport="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#4E4D4C" />
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#4E4D4C" />
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/holo_blue_bright"
+                    android:shadowColor="@color/colorAccent"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="4"
+                    android:textAlignment="center"
+                    android:text="About"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#4E4D4C" />
+
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+android:textSize="16dp"
+                    android:paddingBottom="0sp"
+                    android:text="This App is developed by Zinfo Zone:- \nAn initiative for public awareness. \nOur Team Members are encouraged to participate in various public awareness initiatives being undertaken by our Organization.  \nIt provides an opportunity for the Team to interact with the public virtually.
+
+\nIf you are reading this message, that means, we have started our implementation phase towards our primary goal of reaching to every individual. \nSharing of App is not only free, but also will be treated as you joined our team for a good cause.
+
+\nOur Team works on awareness building on violence, health, education, development, schemes, facilities, scholarships and other issues related to individual's life and Sustainable Development Goals for future generations.
+\n♦ Address: Agartala, Tripura, India ♦\n♦ Email ID: zinfozoneindia@gmail.com ♦\n♦ WhatsApp: +919774840986 ♦\nOn Long Press on the following text, you can join to our WhatsApp Group and contact us via WhatsApp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/holo_red_dark" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#4E4D4C" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:text="https://chat.whatsapp.com/GKTpOapeDf1E3gyJX3kwxE"
+    android:textSize="18dp"
+    android:textIsSelectable="true"/>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#4E4D4C" />
+
+                <Button
+                    android:id="@+id/share"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="share"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:elevation="4dp"
+
+
+                    android:text="Share this App"
+                    android:textColor="#fcdada" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#4E4D4C" />
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

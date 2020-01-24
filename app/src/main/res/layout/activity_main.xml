@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="tripura.zinfozone.calendar.generaladministration.MainActivity">
+
+
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/card_view"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="#ffffff"
+        android:id="@+id/ll_calendar"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="1dp" >
+
+            <FrameLayout
+                android:layout_width="45dp"
+                android:layout_height="45dp" >
+
+                <ImageButton
+                    android:id="@+id/ib_prev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/left_arrow" />
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="January"
+                    android:textColor="#4b4a4a"
+                    android:textSize="20dip"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/taptext"
+                    android:layout_below="@+id/tv_month"
+                    android:text="Tap/ Touch on day to see its detail"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#006000"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="45dp"
+                android:layout_height="45dp" >
+
+                <ImageButton
+                    android:id="@+id/Ib_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/righ_arrow" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:paddingBottom="3dp"
+            android:background="#ffffff"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="4dp" >
+
+            <TextView
+                android:id="@+id/TextView06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="SUN"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#ff0000" />
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="MON"
+                android:textColor="#0000ff" />
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="TUE"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#0000ff" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="WED"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#0000ff" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text="THU"
+                android:textColor="#0000ff" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="FRI"
+                android:textColor="#0000ff" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="SAT"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#ff00ff" />
+
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#8d6969" />
+
+
+
+            <GridView
+                android:id="@+id/gv_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="296dp"
+                android:background="#FFFFFFFF"
+                android:cacheColorHint="#FFFFFFFF"
+                android:clipChildren="true"
+                android:gravity="center"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="7"
+                android:padding="0dp"
+                android:stretchMode="columnWidth"
+                android:textAlignment="center"
+                android:verticalSpacing="-3dp">
+
+            </GridView>
+
+
+
+
+
+        <TextView
+            android:id="@+id/textView00"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#FFFFFF"
+            android:padding="1dp" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvRcyle1_contact"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:text="TripuraCalender | "
+                android:textColor="@color/cobra_color_2"
+                android:textSize="15dp"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintEnd_toStartOf="@+id/ivRecyclerViewShare"
+                card_view:layout_constraintHorizontal_bias="1.0"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivRecyclerViewShare"
+
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_share_black_24dp"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.383"
+                card_view:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/tvRcyle1_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginStart="84dp"
+                android:layout_marginBottom="8dp"
+                android:text="Holiday List|"
+                android:textColor="@color/cobra_color_2"
+                android:textSize="15dp"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintStart_toEndOf="@+id/ivRecyclerViewShare" />
+
+            <ImageView
+                android:id="@+id/ivRecyclerViewShare1"
+
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_comment_black_24dp"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="1.0"
+                card_view:layout_constraintStart_toEndOf="@+id/tvRcyle1_category"
+                tools:layout_editor_absoluteY="0dp" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView122"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Share this App with your friends, colleagues, official staff completely free of cost."
+            android:textColor="@android:color/holo_red_dark" />
+
+
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="Rate this App, this helps us as a developer and allows other users to see if this App is worth installing."
+
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="12dp"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/rateapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shapebutton"
+        android:elevation="4dp"
+        android:onClick="rateapp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="Rate This App / Check for any Update"
+
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="566dp" />
+
+    <Button
+        android:id="@+id/listholiday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapebutton"
+
+        android:elevation="4dp"
+        android:onClick="listholiday"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="Holidays List"
+        android:textColor="#000000"
+        card_view:layout_constraintBottom_toTopOf="@+id/rateapp"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/restholiday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapebutton"
+
+        android:elevation="4dp"
+        android:onClick="share"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="SHARE THIS APP"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="518dp" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapebutton"
+
+        android:elevation="4dp"
+        android:onClick="about"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="ABOUT THIS APP"
+        android:textColor="#000000"
+        card_view:layout_constraintBottom_toTopOf="@+id/rateapp"
+        tools:layout_editor_absoluteX="269dp" />
+
+</android.support.constraint.ConstraintLayout>
